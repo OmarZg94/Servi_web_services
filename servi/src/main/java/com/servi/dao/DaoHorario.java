@@ -8,6 +8,7 @@ import java.util.List;
 import com.mysql.jdbc.Connection;
 import com.servi.connector.Conecction;
 import com.servi.dto.DtoHorario;
+import com.servi.util.Queries;
 
 public class DaoHorario {
 
@@ -21,7 +22,7 @@ public class DaoHorario {
 		try {
 			con = new Conecction().getConection();
 			stmt = con.createStatement();
-			query = "SELECT * FROM horario";
+			query = Queries.Q_SELECT_ALL_HORARIO;
 			ResultSet rs = stmt.executeQuery(query);
 			while (rs.next()) {
 				obj=new DtoHorario();

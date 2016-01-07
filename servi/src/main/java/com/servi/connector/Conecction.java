@@ -4,7 +4,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 import com.mysql.jdbc.Connection;
-import com.servi.config.Config;
+import com.servi.util.Config;
 
 public class Conecction {
 

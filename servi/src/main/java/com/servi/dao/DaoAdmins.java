@@ -8,6 +8,7 @@ import java.util.List;
 import com.mysql.jdbc.Connection;
 import com.servi.connector.Conecction;
 import com.servi.dto.DtoAdmins;
+import com.servi.util.Queries;
 
 public class DaoAdmins {
 
@@ -21,7 +22,7 @@ public class DaoAdmins {
 		try {
 			con = new Conecction().getConection();
 			stmt = con.createStatement();
-			query = "SELECT * FROM admins";
+			query = Queries.Q_SELECT_ALL_ADMINS;
 			ResultSet rs = stmt.executeQuery(query);
 			while (rs.next()) {
 				obj=new DtoAdmins();

@@ -8,6 +8,7 @@ import java.util.List;
 import com.mysql.jdbc.Connection;
 import com.servi.connector.Conecction;
 import com.servi.dto.DtoReporte;
+import com.servi.util.Queries;
 
 public class DaoReporte {
 
@@ -21,7 +22,7 @@ public class DaoReporte {
 		try {
 			con = new Conecction().getConection();
 			stmt = con.createStatement();
-			query = "SELECT * FROM reporte";
+			query = Queries.Q_SELECT_ALL_REPORTE;
 			ResultSet rs = stmt.executeQuery(query);
 			while (rs.next()) {
 				obj=new DtoReporte();
