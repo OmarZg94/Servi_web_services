@@ -31,11 +31,11 @@ public class DaoHorario {
 				obj.setMateria(rs.getString("materia"));
 				obj.setProfesor(rs.getString("profesor"));
 				obj.setSalon(rs.getInt("salon"));
-				obj.setLunes(rs.getTime("lunes"));
-				obj.setMartes(rs.getTime("martes"));
-				obj.setMiercoles(rs.getTime("miercoles"));
-				obj.setJueves(rs.getTime("jueves"));
-				obj.setViernes(rs.getTime("viernes"));
+				obj.setLunes(rs.getString("lunes"));
+				obj.setMartes(rs.getString("martes"));
+				obj.setMiercoles(rs.getString("miercoles"));
+				obj.setJueves(rs.getString("jueves"));
+				obj.setViernes(rs.getString("viernes"));
 				catalog.add(obj);
 			}
 			rs.close();

@@ -6,7 +6,7 @@ public class DtoHorario {
 
 	private int id, salon;
 	private String grupo, materia, profesor;
-	private Time lunes, martes, miercoles, jueves, viernes;
+	private String lunes, martes, miercoles, jueves, viernes;
 
 	public int getId() {
 		return id;
@@ -48,43 +48,43 @@ public class DtoHorario {
 		this.profesor = profesor;
 	}
 
-	public Time getLunes() {
+	public String getLunes() {
 		return lunes;
 	}
 
-	public void setLunes(Time lunes) {
+	public void setLunes(String lunes) {
 		this.lunes = lunes;
 	}
 
-	public Time getMartes() {
+	public String getMartes() {
 		return martes;
 	}
 
-	public void setMartes(Time martes) {
+	public void setMartes(String martes) {
 		this.martes = martes;
 	}
 
-	public Time getMiercoles() {
+	public String getMiercoles() {
 		return miercoles;
 	}
 
-	public void setMiercoles(Time miercoles) {
+	public void setMiercoles(String miercoles) {
 		this.miercoles = miercoles;
 	}
 
-	public Time getJueves() {
+	public String getJueves() {
 		return jueves;
 	}
 
-	public void setJueves(Time jueves) {
+	public void setJueves(String jueves) {
 		this.jueves = jueves;
 	}
 
-	public Time getViernes() {
+	public String getViernes() {
 		return viernes;
 	}
 
-	public void setViernes(Time viernes) {
+	public void setViernes(String viernes) {
 		this.viernes = viernes;
 	}
 
